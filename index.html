@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Lentes de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla Principal -->
+    <header class="main-header">
+        <img src="logo.png" alt="Logo de Diego Arriola" class="logo">
+        <h1>Diseño de Lentes de Contacto</h1>
+        <div class="tabs">
+            <button type="button" id="designTab" class="tab-button active">Diseño de Lente</button>
+            <button type="button" id="helpTab" class="tab-button">Ayuda</button>
+            <button type="button" id="productsTab" class="tab-button">Productos</button>
+        </div>
+    </header>
+
+    <!-- Pestaña de "Diseño de Lente" -->
+    <div id="lensDesign" class="tab-content active">
+        <h3>Diseño de Lente</h3>
+        <div class="eye-container">
+            <!-- Ojo Derecho (OD) -->
+            <div class="eye-group">
+                <h4>OD (Ojo Derecho)</h4>
+                <!-- Aquí van los campos del ojo derecho como se ha diseñado anteriormente -->
+            </div>
+
+            <!-- Ojo Izquierdo (OS) -->
+            <div class="eye-group">
+                <h4>OS (Ojo Izquierdo)</h4>
+                <!-- Aquí van los campos del ojo izquierdo como se ha diseñado anteriormente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Pestaña de "Ayuda" -->
+    <div id="helpTabContent" class="tab-content">
+        <h3>Ayuda</h3>
+        <p>Aquí puedes ver las tablas de conversión:</p>
+        <div class="conversion-table">
+            <h4>Tabla de Conversión Distancia al Vértice</h4>
+            <img src="tabla-conversion.jpg" alt="Tabla de Conversión Distancia al Vértice">
+        </div>
+        <div class="conversion-table">
+            <h4>Tabla de Conversión Dioptrías a Milímetros</h4>
+            <img src="tabla-conversion-2.jpg" alt="Tabla de Conversión Dioptrías a Milímetros">
+        </div>
+    </div>
+
+    <!-- Pestaña de "Productos" -->
+    <div id="productsTabContent" class="tab-content">
+        <h3>Productos</h3>
+        <p>Sube el archivo PDF de los lentes diseñados:</p>
+        <input type="file" id="pdfUpload" accept=".pdf">
+        <button id="downloadPDF" style="display:none;">Descargar PDF</button>
+    </div>
+
+    <!-- Pestaña de "Inicio" -->
+    <div id="homeTabContent" class="tab-content">
+        <h3>Página de Inicio</h3>
+        <button id="backToStart" class="whatsapp-btn">Volver al Inicio</button>
+    </div>
+
+    <footer>
+        <button id="sendWhatsapp" class="whatsapp-btn">Enviar por WhatsApp</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
